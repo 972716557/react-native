@@ -1,4 +1,3 @@
-import { Link } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 
@@ -6,10 +5,7 @@ export default function App() {
   return (
     <>
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Link href="/detail" asChild>
-          <Text style={styles.title}>这能faewf</Text>
-        </Link>
+        <Text style={styles.title}>这是详情页面</Text>
         <StatusBar style="auto" />
       </View>
     </>
@@ -25,6 +21,6 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
-    color: "#f2f3ff",
+    color: "yellow",
   },
 });
