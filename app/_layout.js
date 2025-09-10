@@ -16,7 +16,16 @@ const Layout = () => {
           fontWeight: "bold",
         },
       }}
-    />
+    >
+      {/* 在这里统一配置页面标题 */}
+      <Stack.Screen name="index" options={{ title: "首页" }} />
+      <Stack.Screen
+        name="detail/[id]"
+        options={({ route }) => ({
+          title: route.params.title || "详情页",
+        })}
+      />
+    </Stack>
   );
 };
 export default Layout;

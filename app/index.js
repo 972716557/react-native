@@ -6,18 +6,6 @@ export default function App() {
   return (
     <>
       <View style={styles.container}>
-        <Stack.Screen
-          options={{
-            title: "首页",
-            headerStyle: {
-              backgroundColor: "#e29447",
-            },
-            headerTintColor: "#fff",
-            headerTitleStyle: {
-              fontWeight: "bold",
-            },
-          }}
-        />
         <Text>Open up App.js to start working on your app!</Text>
         <Link href="/detail/10" asChild>
           <Text style={styles.title}>这能faewf</Text>
