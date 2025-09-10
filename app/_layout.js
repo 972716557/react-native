@@ -1,4 +1,4 @@
-import { Link, Stack } from "expo-router";
+import { Link, Stack, Tabs } from "expo-router";
 import { Image } from "expo-image";
 import { StyleSheet, TouchableOpacity } from "react-native";
 import { SimpleLineIcons } from "@expo/vector-icons";
@@ -49,6 +49,7 @@ const Layout = () => {
         },
       }}
     >
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       {/* 在这里统一配置页面标题 */}
       <Stack.Screen
         name="index"
