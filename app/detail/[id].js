@@ -1,14 +1,15 @@
-import { Link } from "expo-router";
+import { Link, useLocalSearchParams } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function App() {
+  const { id } = useLocalSearchParams();
   return (
     <>
       <View style={styles.container}>
         <Text>Open up App.js to start working on your app!</Text>
-        <Link href="/detail/10" asChild>
-          <Text style={styles.title}>这能faewf</Text>
+        <Link href="/detail" asChild>
+          <Text style={styles.title}>{id}</Text>
         </Link>
         <StatusBar style="auto" />
       </View>
