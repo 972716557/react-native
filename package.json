@@ -13,6 +13,7 @@
   "dependencies": {
     "expo": "~54.0.0-preview.16",
     "expo-constants": "~18.0.7",
+    "expo-image": "^2.4.0",
     "expo-linking": "~8.0.7",
     "expo-router": "~6.0.0-preview.16",
     "expo-status-bar": "~3.0.7",
