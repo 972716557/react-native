@@ -1,9 +1,10 @@
-import { Link, useLocalSearchParams } from "expo-router";
+import { Link, useLocalSearchParams, useNavigation } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 
 export default function App() {
   const { id } = useLocalSearchParams();
+  const navigation = useNavigation();
   return (
     <>
       <View style={styles.container}>
@@ -12,6 +13,13 @@ export default function App() {
           <Text style={styles.title}>{id}</Text>
         </Link>
         <StatusBar style="auto" />
+        <TouchableOpacity
+          onPress={() => {
+            navigation.setOptions({ title: "这是navigation设置的详情页" });
+          }}
+        >
+          <Text>修改标题</Text>
+        </TouchableOpacity>
       </View>
     </>
   );
