@@ -7,6 +7,14 @@ const Layout = () => {
       screenOptions={{
         headerTitleAlign: "center",
         animation: "slide_from_right",
+        // 在这里可以给所有页面添加统一的header样式
+        headerStyle: {
+          backgroundColor: "#e29447",
+        },
+        headerTintColor: "#fff",
+        headerTitleStyle: {
+          fontWeight: "bold",
+        },
       }}
     />
   );
